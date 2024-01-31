@@ -15,6 +15,13 @@ body {
 	overflow-y: scroll;
 }
 
+.bg-logo {
+    position: absolute;
+    top: 40px;
+    &.left { left: 40px }
+    &.right { right: 40px }
+    height: 130px;
+}
 
 
 main {
