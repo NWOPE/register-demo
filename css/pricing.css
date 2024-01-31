@@ -1,0 +1,123 @@
+.option.full-length {
+  padding: 15px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: stretch;
+}
+.option.full-length h2 {
+  margin: 0;
+  margin-right: 30px;
+}
+.option.full-length p.description {
+  text-align: left;
+  width: auto;
+  flex: 1;
+}
+.option.full-length div.price-split {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.option.full-length div.price-split div {
+  padding: 0px 10px;
+}
+.option.full-length div.price-split div h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+.option.full-length div.price-split div input {
+  width: 40px;
+  padding: 6px 0;
+  font-family: "Red Hat Mono";
+  font-size: 18px;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.four-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.four-blocks label.sponsor-radio {
+  width: 50%;
+}
+
+label.sponsor-radio {
+  display: block;
+  padding: 8px;
+}
+
+input.sponsor-radio {
+  display: none;
+}
+input.sponsor-radio:checked + .option {
+  outline: solid 3px #06f;
+  transform: scale(1.02);
+}
+
+.option.four {
+  height: 100%;
+  position: relative;
+  padding: 40px 20px;
+  padding-bottom: 80px;
+}
+.option.four img.crown {
+  height: 60px;
+}
+.option.four h2 {
+  margin-top: 10px;
+}
+.option.four h3 {
+  font-size: 20px;
+}
+.option.four ul {
+  margin-top: 10px;
+  text-align: left;
+}
+.option.four ul li {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.option.four h3.price {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 32px;
+}
+
+.option.single {
+  display: block;
+  padding: 40px 40px;
+  text-align: center;
+}
+.option.single h2 {
+  text-align: center;
+}
+
+.option.selectable {
+  cursor: pointer;
+  transition: transform 0.1s, outline 0.1s;
+  outline: solid 3px rgba(0, 102, 255, 0);
+}
+.option.selectable:hover {
+  transform: scale(1.02);
+}
+.required-tables {
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.required-tables.visible {
+  opacity: 1;
+}
+
+.or {
+  margin: 20px 0;
+  font-size: 25px;
+}
